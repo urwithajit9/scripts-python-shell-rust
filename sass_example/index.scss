@@ -1,0 +1,72 @@
+/* define variables for the primary colors */
+$primary_1: #a2b9bc;
+$primary_2: #b2ad7f;
+$primary_3: #878f99;
+
+$myFont: Helvetica, sans-serif;
+
+$myFontSize: 18px;
+$myWidth: 680px;
+
+$myColor: red;
+//scope of variable
+h1 {
+  $myColor: green;
+  color: $myColor;
+}
+
+p {
+  color: $myColor;
+}
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+}
+
+#container {
+  width: $myWidth;
+}
+
+/* use the variables */
+.main-header {
+  background-color: $primary_1;
+}
+
+.menu-left {
+  background-color: $primary_2;
+}
+
+.menu-right {
+  background-color: $primary_3;
+}
+//nesting
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+//nested properties
+// font: {
+//   family: Helvetica, sans-serif;
+//   size: 18px;
+//   weight: bold;
+// }
+
+// text: {
+//   align: center;
+//   transform: lowercase;
+//   overflow: hidden;
+// }

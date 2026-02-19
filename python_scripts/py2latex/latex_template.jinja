@@ -1,0 +1,12 @@
+\documentclass{article}
+\usepackage{fancyvrb}
+\usepackage{color} % Required for syntax highlighting colors
+
+\begin{document}
+
+
+{% for file in input_files %}
+\VerbatimInput{{ '{' }}{{ file }}{{ '}' }}
+{% endfor %}
+
+\end{document}
